@@ -1,0 +1,29 @@
+*{
+    background-color: deeppink;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+ol{
+    color: white;
+}
+ul{
+    color: white;
+}
+p{
+    color: white;
+}
