@@ -1,10 +1,24 @@
-let a = 3, b = 2, c = 1, d = 4;
+let a = 1;
 
-let z = a * b + c / d;
-console.log( z );
+//Operador de asignacion compuesto
+a += 3; // a = a + 3
+console.log (a);
 
-z = c + a * b / d;
-console.log( z );
+a -= 2; // a = a - 2
+console.log(a);
 
-z = (c + a) * b / c;
-console.log( z );
+/*
+*=
+/=
+%=
+**=
+*/
+a *= 2; 
+console.log(a);
+
+a %= 2;
+console.log(a);
+
+a **= 2;
+console.log(a);
+
