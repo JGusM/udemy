@@ -5,7 +5,10 @@ en JavaScript
 */
 //Tipo de dato string
 var nombre = "Carlos";
-console.log(nombre);
+console.log(typeof nombre);
+
+nombre = 10.5;
+console.log(typeof nombre);
 
 //Tipo de dato numérico
 var numero = 1000;
@@ -17,4 +20,4 @@ var objeto = {
     apellido: "Perez",
     telefono: "55443322"
 }
-console.log(objeto);
+console.log(typeof objeto);
