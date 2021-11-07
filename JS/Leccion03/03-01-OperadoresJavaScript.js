@@ -1,19 +1,6 @@
-//Ejemplo de AND (&&), regresa true solo si ambos operandos son true
-let a = 15;
-let valMin = 0, valMax = 10;
+let resultado = (1>2) ? "verdadero" : "falso"; 
+console.log(resultado);
 
-if( a >= valMin && a <= valMax ){
-    console.log("Dentro de rango")
-}
-else{
-    console.log("Fuera de rango")
-}
-
-//Ejemplo de OR (||), regresa true si cualquier operando es true
-let vacaciones = true, diaDescanso = false;
-if(vacaciones || diaDescanso ){
-    console.log("Padre puede asistir al juego del hijo")
-}
-else{
-    console.log("El padre esta ocupado");
-}
+let numero = 110;
+resultado = ( numero % 2 == 0 ) ? "Número par" : "Número impar";
+console.log( resultado);
