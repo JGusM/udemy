@@ -1,24 +1,10 @@
-let a = 3, b = 2;
-let z = a + b;
+let a = 3, b = 2, c = 1, d = 4;
 
-//Incremento
-//Pre-incremento (el operador ++ antes de la variable)
-z = ++a;
-console.log(a);
-console.log(z);
+let z = a * b + c / d;
+console.log( z );
 
-//Post-incremento (el operador ++ despues de la variable)
-z = b++;
-console.log(b);
-console.log(z);
+z = c + a * b / d;
+console.log( z );
 
-//Decremento
-//Predecremento
-z = --a;
-console.log(a);
-console.log(z);
-
-//Postdecremento
-z = b--;
-console.log(b);
-console.log(z);
+z = (c + a) * b / c;
+console.log( z );
