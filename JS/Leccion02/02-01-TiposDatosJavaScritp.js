@@ -1,6 +1,7 @@
-let nombre;
-nombre = "Juan"
-console.log(nombre)
+let nombreCompleto = "Juan Perez";
+console.log( nombreCompleto );
 
-const apellido = "Perez";
-apellido = "Lara"
+let x, y;
+x = 10, y = 20;
+let z = x + y;
+console.log(z); 
