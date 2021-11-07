@@ -1,24 +1,8 @@
-let a = 1;
+//Operadores de comparacion 
+let a = 3, b = 2, c = "3";
 
-//Operador de asignacion compuesto
-a += 3; // a = a + 3
-console.log (a);
+let z = a == c; // se revisa el valor sin importar el tipo
+console.log(z);
 
-a -= 2; // a = a - 2
-console.log(a);
-
-/*
-*=
-/=
-%=
-**=
-*/
-a *= 2; 
-console.log(a);
-
-a %= 2;
-console.log(a);
-
-a **= 2;
-console.log(a);
-
+z = a === c; //revisa los valores pero tambien los tipos
+console.log(z);
