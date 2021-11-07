@@ -1,8 +1,8 @@
 //Operadores de comparacion 
-let a = 3, b = 2, c = "3";
+let a = 3, b = 2, c = 3;
 
-let z = a == c; // se revisa el valor sin importar el tipo
+let z = a != c; // se revisa el valor sin importar el tipo
 console.log(z);
 
-z = a === c; //revisa los valores pero tambien los tipos
+z = a !== c; //revisa los valores pero tambien los tipos
 console.log(z);
