@@ -1,19 +1,19 @@
-let mes = 10;
-let estacion;
+let hora = 4;
+let saludo;
 
-if ( mes == 1 || mes == 2 || mes == 12){
-    estacion = "Invierno";
+if( hora >= 6 && hora <= 11){
+    saludo = "Buenos Dias"
 }
-else if ( mes == 3 || mes == 4 || mes == 5){
-     estacion = "Primavera";
+else if( hora >= 12 && hora <= 18){
+    saludo = "Buenos Tardes"
 }
-else if ( mes == 6 || mes == 7 || mes == 8){
-     estacion = "Verano";
+else if( hora >= 19 && hora <= 24){
+    saludo = "Buenos Noches"
 }
-else if ( mes == 9 || mes == 10 || mes == 11){
-     estacion = "Otoño";
+else if( hora >= 0 && hora < 6){
+    saludo = "Durmiendo"
 }
 else{
-     estacion = "Valor incorrecto";
+    saludo = "Valor incorrecto"
 }
-console.log(estacion);
+console.log(saludo);
