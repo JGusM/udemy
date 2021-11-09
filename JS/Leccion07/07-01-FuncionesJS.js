@@ -1,9 +1,8 @@
-miFuncion(4,2)
-
 // Declaracion de la funcion
 function miFuncion(a, b){
-    console.log("Suma: " + (a + b));
+return a + b;
 }
 
 // Llamando a la funcion
-miFuncion(2, 3);
+let resultado = miFuncion(2, 3);
+console.log(resultado);
