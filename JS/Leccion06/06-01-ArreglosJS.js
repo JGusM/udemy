@@ -22,3 +22,9 @@ console.log(autos);
 
 autos[6] = "Porsche";
 console.log(autos);
+
+console.log(typeof autos);
+
+console.log(Array.isArray(autos));
+
+console.log(autos instanceof Array);
