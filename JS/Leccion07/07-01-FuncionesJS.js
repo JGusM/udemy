@@ -1,9 +1,10 @@
 // Declaracin Funcion de tipo Expresion
-let sumar = function (a, b){ return a + b };
+let sumar = function (a = 4, b = 5){
+    console.log(arguments[0]);
+    console.log(arguments[1]);
+    console.log(arguments[2]);
+    return a + b + arguments[2];
+};
 
-resultado = sumar(1, 2);
-console.log(resultado);
-
-const sumarFuncionTipoFlecha = (a, b) => a + b;
-resultado = sumarFuncionTipoFlecha(3, 5);
+resultado = sumar(3, 6, 7);
 console.log(resultado);
