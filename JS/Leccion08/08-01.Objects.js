@@ -8,11 +8,10 @@ let persona = {
     }
 }
 
-console.log(persona.nombre);
-console.log(persona['apellido']);
+persona.tel = '55443322'
+persona.tel = '44332211'
 
-// for in Este es un ciclo for que se puede usar para recorrer un objeto
-for( nombrePropiedad in persona){
-    console.log( nombrePropiedad );
-    console.log( persona[nombrePropiedad] );
-}
+console.log( persona );
+
+delete persona.tel;
+console.log( persona );
