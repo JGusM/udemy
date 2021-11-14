@@ -1,23 +1,19 @@
-let persona = {
-    nombre: "Juan",
-    apellido: 'Perez',
-    email: 'jperez@mail.com',
-    edad: 28,
-    idioma: 'es',
-    get lang(){
-        return this.idioma.toUpperCase();
-    },
-    set lang( lang){
-        this.idioma = lang.toUpperCase();
-    },
-    get nombreCompleto(){
-        return this.nombre + ' ' + this.apellido;
-    }
+//Funcion constructor de objetos de tipo Persona
+function Persona(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
 }
 
-console.log( persona.lang );
+let padre = new Persona('Juan', 'Perez', 'jperez@mail.com');
+console.log( padre );
 
-persona.lang = 'en';
+let madre = new Persona('Laura', 'Quintero', 'lquintero@mail.com');
+console.log( madre );
 
-console.log( persona.lang );
-console.log( persona.idioma );
+// aca modifico el nombre del primer objeto
+padre.nombre = 'Carlos';
+
+// aca muestra en pantalla que el cambio no afecto al objeto madre
+console.log( padre );
+console.log( madre );
