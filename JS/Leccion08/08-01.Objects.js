@@ -1,8 +1,8 @@
 let persona1 = {
     nombre: 'Juan',
     apellido: 'Perez',
-    nombreCompleto: function(titulo, tel){//agrego los parametros titulo y tel
-        return titulo + ': ' + this.nombre + ' ' + this.apellido + ', ' + tel; //no le pone this porque se refiere a la funcion
+    nombreCompleto: function(titulo, tel){
+        return titulo + ': ' + this.nombre + ' ' + this.apellido + ', ' + tel;
     }
 }
 
@@ -11,8 +11,13 @@ let persona2 = {
     apellido: 'Lara',
 }
 
-// Uso de call para usar...
+// Uso de apply para usar...
 // ...el metodo persona1.nombreCompleto conlos datos del persona2
-console.log( persona1.nombreCompleto('Lic.', '11223344') ); //aca pasa los argumentos de la funcion
+console.log( persona1.nombreCompleto('Lic.', '55443322') );
 
-console.log(persona1.nombreCompleto.call( persona2, 'Ing', '6655443322' )); //aca pasa los argumentos de la funcion
+// con este metodo tiene que pasar antes un arreglo
+let arreglo = ['Ing.', ' 11223344'];
+console.log(persona1.nombreCompleto.apply( persona2, arreglo ));//aca pasa arreglo
+
+let arreglo = ['Ing.', ' 11223344'];
+console.log(persona1.nombreCompleto.apply( persona2, 'Ing.', ' 11223344' )); //aca pasa los valores del arreglo
